@@ -73,6 +73,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         return super.onOptionsItemSelected(item);
     }
 
+    ////////// EYAD TEST
+
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
