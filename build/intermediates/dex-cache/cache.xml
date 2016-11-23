@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f36cf060b7f0d881ea6449c254ab8a570a3dcdbe">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-10.0.0_80b4462f011860035a9ace6c9956ba2138d9d804\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ddfa80ca49f1334afea1f9aa93148be73f73cd0f">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.0.0_a1d0ba06db31d9d1f9be2c479534b96c907d38e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ca4ffc4d90754f1f2438dfc3e94006cfcc6be98">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-10.0.0_a945c32a5f960ebf01ba9dad55e5409a51f10363\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_7ad3735b312fdfa61dd8a1f6d37c732a23ffec99\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="444a220fadbdf260b3aa47c6e858c5d1e645170f">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.0.0_6e804c90526c4dac05962d4728d2018a71cd24c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3660967212b89195e628670db181ed86e3307569">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.0_5dece41251703da1b0cd96acc2fd0507b9ed4e99\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3861e0294c61bf4bf968a1da1607497345dca283">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-10.0.0_1ce5a0168525cbcffa69c585e37ffc8a5d3971ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b7518f2d3fce2ebec6a0bb8d2cd97eebc9f119df">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-10.0.0_64d6615d2c4b01b8fce4a41aa0436ee23a6c1978\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_54bfbec5c1287f6b47c45ca7f6ba12b7e9f6e764\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1fabe27d7a7b7ef3fe077c6499cd0a4f08e1c427">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-10.0.0_26c1645a684f2756695681cf97d1351ac6772834\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cf60a8cd2f896314e40b2f1a9788e91e228c3671">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.0.0_4f3f199624223e35ccee03306158106c958042f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ac49e5d5aea8772c8018ce2888145f04c5fe7ca">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-10.0.0_943170af6d0034e7d967045febdee20b350db2e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="813f70b551ce5206ad15dfe6e2f5b2d86e08a723">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-10.0.0_ae20e5bb49d2912fc827809b7546587c2ad75c81\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_e177792910960d3fcc87192bc453f7bf89dba3c0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="985be85104f6d0c5c5e51e7b7e60d8883a98ac64">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.0_2633efa22f7cc70bc1853001be1f66ef32ea8dd8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="777627dcaf0eaacd4212220e8f2d0c63def91774">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-10.0.0_9563d421476b10412f3052a88bb5be1bc65b7a0f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76863814ca24fea5a0510373d15d3ccddebc09f1">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-10.0.0_f0f1a1fbcc9cb94a91b7dece1b62e2ab34e2d2e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fb0229499e600b485a276d4e31161a3ae31c144c">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.0.0_ac972f4a2818b448a6b0bc8f83e6bd05006b21be\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="73a2c740a76aa4ba46168ed8bcdee1966e48a589">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-10.0.0_63ace42f3a7298bbca14abc9ec48d6136a5c2ffe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="73fe8ab7f76e41d0cabbc4fa3399557de52efb2d">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.0_331cbb51c4e2b1ef06c1d8fcb36acb5b105405a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.1_20afcaaae1d21084885f63a833b3d9eafad6d740\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.1_f0c1f0e9025e63b09cd617a8062da97a683acad7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3347c3e7056fabc88bdbd8fdae65ddf2b674d977">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.0_aff4d79085c61c00a12b2e63fd435b372180c418\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_fbca8f25b9277033b717d82685bafe1c383baf27\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2376d0ec8dbe85d3446cad64905c0395fbe220e">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.0.0_a735ccf0ef5fc7c16a2b03addd9968c28812f117\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="849da156edbc1201f5cd6e237524187442a62af3">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-10.0.0_d85b022e3006752199763e60bbe29e58d9b08866\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7ed3fd9d5a9687980dac6c504abd91ad3dfa238">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.0.0_9b90dbe14ec77d4998da46ea0f10720ced908a09\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e2bf5e85132c8bfed05a87b71352918815e0205">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-10.0.0_6154b18b4c45c75f910f12f941b863c59469ead0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="741f550aea73f64507fc60a799fefd5a2ea2bef5">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-10.0.0_712c53fe03d9e75c8c526b972ec3fd7aab07430b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_17a408655ee92fb40682f7e58640ca16f4997783\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a383a583c346ce8ea5767d77f4fe58e1d8e5f221">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.0.0_58a8fcb4f4f30a2cebcc29b92f51d17a72e2ffad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_b68d7d13650ed48e673ef7353bf974788126ee68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="80338dde5f9d8e20efe2f2a44bc424aefe4eb8f4">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-10.0.0_9b5fd3b5decffa5a7b2ce3e44c386ee102531647\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2b410ae1fda134f470276365f4b7f846269e0d23">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-10.0.0_277b98a9daecd17a38cf13647fba8fee27872210\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4701f9f79c8a00564912b21b0cb0cec3f51a7d23">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-10.0.0_823ba29338682327df603f9791465de828d83d90\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ce6e6e59212db0893fc36e5b579cf319a84aade8">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.0.0_47e46c8b241b1c34c2d9c5fe4e9029abbdaeb3d5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_b7433dd64b8da807b7bfd05beff26657dfafed81\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0d70f7c486d9d65ceabd0039667ae4d53bf0ae7c">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-10.0.0_ef31567eb5d3ec16c1668eb45a9a105e4b5e4a9d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_e7d1485055236f8dae5e0ed688bd1e49873ebfbd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_88a767412c128142e89bde1539444b04579e4232\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_651207563a482a5afffc55986a352baa06e37358\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_b5027690104df207b6ba47360158bee6fa1c1e34\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_58ed5a0ef992d60b968569dd99d669f525dddd1b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6cc495f5634b8aaae30a37317ba687830da545cf">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-10.0.0_6036aef4653d9140a406efc4dfd76302e646e4e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="58cd8dc3bbf63b37f0e107033257467511130e0f">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-10.0.0_4cbdd27c4e8509ab424426a9e59840b77d0aa5a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_4b5d7e6c1ce760cca68c6dde7d4ab1a277a5c3b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1c926efda90fbf653889fea922eacc527de8486">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-10.0.0_0a0ae49132fb3ad4ad79388dd63f8f9585cc35ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a61005619e43f203768ff3f224137def6f029e50">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-10.0.0_95ffc38b58669736be9499c75f75768c90dbeab3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75dbc3537bc912d077b3db2f5ac72d5b43644b2c">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.0_4abc7ecbbf98070f533f846b8ffd62dd74da5650\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2e61c07206f0568b34939e2dc0e2bc75251648dc">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-10.0.0_ab111df197cbfe334ca4181407807ae81bdfa374\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="543835521cf4f867223d9f2a4b19ce32f95b0573">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-awareness-10.0.0_4110d4be96eaad346d176a60cdd367ab88af393f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5fd86107cb2d2fa2d099250066cc664cdcfd476f">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-10.0.0_19b807139cc2c8d8f7496c4f9e50875c60de15ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b7e0a45e8139272f3fe2a19d4e7b1122c769550">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-10.0.0_dc2067262f6392b9cc96472df662af6e4ff37698\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_9e3a9b0e724c1197e11187e63e9b0634d6c96af4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="22031b047b12904b888549ba36c0c30d83b1aea1">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-appindexing-10.0.0_bc20892a6c22c5eb0e462ae5b212fb31c79b5196\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7ad327e9630934e1c67fc933004db82debdfc2">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_472b915b4a00675bbcbb0595e792397908943d8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ae809d521d9f7da5337a82edd64eea23a76e788d">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-10.0.0_f5c06723255a8c8514adc374ccad3861f1b5575f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca730ac2d72056445bf68998cec6b6b2cf4d179e">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-10.0.0_a61050fc9111f0ddb58ba202708fba3e3ffd5849\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8e2fd2b87dc79fc6c8d70fda1247ac6f4a878a28">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-10.0.0_9f352f6f1c8e7f463bdc42a392c8de4034d63d58\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3a05b3852a6aec21ea0a6ea4d284ee69c04c55c4">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.0.0_e4322f80be1a20f8568ea5b35890ffde57713d4d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bb364f67ec2eba2356872b2b4ddfe8aada2d5ac">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-10.0.0_d486690c97f1a42467c1651fc58df476f035b8ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_7d119b9c7d968686eb8c299f02921d5fd998a745\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="932350448ea536c5dfbc45697951f31d34e50f1f">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-10.0.0_ca21f8c7e8a77f1fb668e92caa191afd2057c779\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="147c3e6b95aa3d1e83705b056777ef865d272969">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-10.0.0_111f99e8aeba2d0d762b04ea86f5c59e1852837a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a18773c279bde7e49e09f621aea613685c108c7f">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-10.0.0_d19fa528d8618b85c390358c6895fc35168bc9d0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="41e39c7ee84e63ae18df6c6ccb96d196996add4c">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-10.0.0_0a4a53493008ebfa4d6bcfd07e96dc07196619de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_c8083f232bc59c121cb80d31bcbe61cbe9df3ace\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_f36d521edde2792dda24c3d8b760dcc9619cef95\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a2236d8a724e20cfefc57c317f9fbba406b4882b">
+        <dex dex="C:\Users\ZAD\Downloads\easypermissions-master\GistecAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_36752b59d7f8cba0a56caeb7e557d0c18e819f49\classes.dex" />
+    </item>
+
+</items>
