@@ -9,4 +9,17 @@
             android:title="@string/action_search"
             android:icon="@android:drawable/ic_menu_search"
             app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_ShowSavedPlaces"
+        android:title="@string/action_show_saved_places"
+        android:icon="@android:drawable/ic_menu_save"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_ShowHospitalsList"
+        android:title="@string/action_show_hospitals_list"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        app:showAsAction="ifRoom|collapseActionView" />
+
     </menu>

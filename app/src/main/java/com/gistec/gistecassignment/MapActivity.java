@@ -1,5 +1,6 @@
 package com.gistec.gistecassignment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
@@ -17,6 +18,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.gistec.gistecassignment.model.Hospital;
+import com.gistec.gistecassignment.utils.SessionManager;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -86,6 +88,25 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+         switch (item.getItemId()) {
+
+             case R.id.action_ShowHospitalsList:
+                 Intent hospitalsIntent = new Intent(MapActivity.this,AllHospitalsActivity.class);
+                 SessionManager.setHospitalsArrayList(hospitalsArrayList);
+                 startActivity(hospitalsIntent);
+
+                return true;
+
+             case R.id.action_search:
+
+                 return true;
+
+             case R.id.action_ShowSavedPlaces:
+
+                 return true;
+
+         }
         return super.onOptionsItemSelected(item);
     }
 
@@ -149,15 +170,18 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                               hospital.name_English = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("English_Name");
                               hospital.name_Arabic = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("Arabic_Name");
                               hospital.type = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("Type");
+                              hospital.imageUrl = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("Imageurl");
                               hospital.marker =  mMap.addMarker(new MarkerOptions()
                                       .position(new LatLng(resultsJsonArray.getJSONObject(i).getJSONObject("geometry").getDouble("y"), resultsJsonArray.getJSONObject(i).getJSONObject("geometry").getDouble("x")))
                                       .snippet(hospital.type)
                                       .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
                                 if(deviceLanguage.equals("العربية")){
                                     hospital.marker.setTitle(hospital.name_Arabic);
+                                    hospital.name = hospital.name_Arabic;
                                 }else
                                 {
                                     hospital.marker.setTitle(hospital.name_English);
+                                    hospital.name = hospital.name_English;
                                 }
 
 

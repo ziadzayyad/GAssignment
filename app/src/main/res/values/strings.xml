@@ -4,6 +4,8 @@
 
     <string name="action_settings">Settings</string>
     <string name="action_search">Place Search</string>
+    <string name="action_show_saved_places">Show Saved Places</string>
+    <string name="action_show_hospitals_list">Show Hospitals List</string>
     <string name="search_hint">Search address or place</string>
     <string name="menu_search">Search</string>
 </resources>

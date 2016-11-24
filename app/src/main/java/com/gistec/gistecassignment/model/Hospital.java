@@ -13,5 +13,6 @@ public class Hospital {
     public String name_Arabic;
     public String type;
     public Marker marker;
+    public String imageUrl;
 
 }

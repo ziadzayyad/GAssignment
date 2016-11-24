@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hospital_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gistec.gistecassignment.HospitalDetailsActivity"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/building"
+        android:id="@+id/imageView2"
+        />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:text="TYPE"
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:text="TextView2"
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent"
+        android:id="@+id/tvType"
+        />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:text="Ownership"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+
+            />
+
+        <TextView
+            android:text="TextView2"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:id="@+id/tvOwnership"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:text="Beneficiary"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+
+            />
+
+        <TextView
+            android:text="TextView2"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:id="@+id/tvBeneficiary"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:text="Finance number"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:text="TextView2"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:id="@+id/tvFinancenumber"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:text="Working hours AM"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:text="TextView2"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:id="@+id/tvWorkingHoursAM"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:text="tvWorking hours PM"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+
+            />
+
+        <TextView
+            android:text="TextView2"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:id="@+id/tvWorkingHoursPM"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            />
+
+        <TextView
+            android:text="TextView2"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
