@@ -1,5 +1,7 @@
 package com.gistec.gistecassignment.model;
 
+import com.google.android.gms.maps.model.Marker;
+
 /**
  * Created by ZAD on 11/23/2016.
  */
@@ -7,7 +9,9 @@ package com.gistec.gistecassignment.model;
 public class Hospital {
 
     public String name;
-    public String x;
-    public String y;
+    public String name_English;
+    public String name_Arabic;
+    public String type;
+    public Marker marker;
 
 }
