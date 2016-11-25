@@ -10,169 +10,299 @@
     android:weightSum="1">
 
 
-    <ImageView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBackground"
+
+        >
+
+        <ImageView
+            android:id="@+id/ivBackfDetails"
+            android:text="@string/TYPE_label"
+            android:clickable="true"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            app:srcCompat="@drawable/back_arrow"
+            android:paddingLeft="@dimen/margin6"
+            />
+
+        <TextView
+            android:text="@string/Header_label"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="end|center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_super"
+            android:gravity="center"
+            android:paddingRight="@dimen/margin6"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ivBackfDetails"
+            android:layout_toEndOf="@+id/ivBackfDetails"
+            android:layout_toLeftOf="@+id/ivbSaveHospital"
+            android:layout_toStartOf="@+id/ivbSaveHospital" />
+
+
+        <ImageView
+            android:id="@+id/ivbSaveHospital"
+            android:clickable="true"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            app:srcCompat="@android:drawable/ic_menu_save"
+            android:paddingRight="@dimen/margin4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin120"
         app:srcCompat="@drawable/building"
-        android:id="@+id/imageView2"
+        android:id="@+id/niHospitalImage"
         />
 
-    <LinearLayout
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+
     >
 
     <TextView
-        android:text="TYPE"
-        android:layout_width="@dimen/activity_horizontal_margin"
-        android:layout_height="match_parent"
+        android:id="@+id/textView1"
+        android:text="@string/TYPE_label"
+        android:layout_width="@dimen/margin80"
+        android:layout_height="@dimen/margin50"
+        android:layout_gravity="center"
+        android:gravity="start|center"
+        android:paddingLeft="@dimen/margin6"
         />
 
-    <TextView
-        android:text="TextView2"
-        android:layout_width="@dimen/activity_horizontal_margin"
-        android:layout_height="match_parent"
-        android:id="@+id/tvType"
-        />
+        <TextView
+            android:id="@+id/tvType"
+            android:text="TextView2"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end|center"
+            android:paddingRight="@dimen/margin6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_toEndOf="@+id/textView1" />
 
 
-</LinearLayout>
-    <LinearLayout
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+
         >
 
         <TextView
-            android:text="Ownership"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-
-            />
-
-        <TextView
-            android:text="TextView2"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-            android:id="@+id/tvOwnership"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:text="Beneficiary"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-
-            />
-
-        <TextView
-            android:text="TextView2"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-            android:id="@+id/tvBeneficiary"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:text="Finance number"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-            />
-
-        <TextView
-            android:text="TextView2"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-            android:id="@+id/tvFinancenumber"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:text="Working hours AM"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-            />
-
-        <TextView
-            android:text="TextView2"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-            android:id="@+id/tvWorkingHoursAM"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:text="tvWorking hours PM"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-
-            />
-
-        <TextView
-            android:text="TextView2"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-            android:id="@+id/tvWorkingHoursPM"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:text="TextView"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
-            android:id="@+id/textView"
-            />
-
-        <TextView
-            android:text="TextView2"
-            android:layout_width="@dimen/activity_horizontal_margin"
-            android:layout_height="match_parent"
             android:id="@+id/textView2"
+            android:text="@string/Ownership_label"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:paddingLeft="@dimen/margin6"
             />
 
+        <TextView
+            android:id="@+id/tvOwnership"
+            android:text="TextView2"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end|center"
+            android:paddingRight="@dimen/margin6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2" />
 
-    </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:text="@string/Beneficiary_label"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:paddingLeft="@dimen/margin6"
+            />
+
+        <TextView
+            android:id="@+id/tvBeneficiary"
+            android:text="TextView2"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end|center"
+            android:paddingRight="@dimen/margin6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:text="@string/Area_label"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:paddingLeft="@dimen/margin6"
+            />
+
+        <TextView
+            android:id="@+id/tvArea"
+            android:text="TextView2"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end|center"
+            android:paddingRight="@dimen/margin6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:text="@string/FinanceNumber_label"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:paddingLeft="@dimen/margin6"
+            />
+
+        <TextView
+            android:id="@+id/tvFinancenumber"
+            android:text="TextView2"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end|center"
+            android:paddingRight="@dimen/margin6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:text="@string/WorkingHoursAM_label"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:paddingLeft="@dimen/margin6"
+            />
+
+        <TextView
+            android:id="@+id/tvWorkingHoursAM"
+            android:text="TextView2"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end|center"
+            android:paddingRight="@dimen/margin6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:text="@string/WorkingHoursPM_label"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:paddingLeft="@dimen/margin6"
+            />
+
+        <TextView
+            android:id="@+id/tvWorkingHoursPM"
+            android:text="TextView2"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end|center"
+            android:paddingRight="@dimen/margin6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6" />
+
+
+    </RelativeLayout>
+
 
 
 </LinearLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <!-- font sizes -->
+    <dimen name="font_tiny">12sp</dimen>
+    <dimen name="font_small">16.5sp</dimen>
+    <dimen name="font_small_plus">19.5sp</dimen>
+    <dimen name="font_medium">22.5sp</dimen>
+    <dimen name="font_medium_plus">25.5sp</dimen>
+    <dimen name="font_large">28.5sp</dimen>
+    <dimen name="font_large_plus">31.5sp</dimen>
+    <dimen name="font_title">34.5sp</dimen>
+    <dimen name="font_title_toolbar">38sp</dimen>
+    <!-- margins -->
+    <dimen name="margin1">1.5dp</dimen>
+    <dimen name="margin2">4.5dp</dimen>
+    <dimen name="margin3">7.5dp</dimen>
+    <dimen name="margin4">10.5dp</dimen>
+    <dimen name="margin5">13.5dp</dimen>
+    <dimen name="margin6">16.5dp</dimen>
+    <dimen name="margin7">19.5dp</dimen>
+    <dimen name="margin8">22.5dp</dimen>
+    <dimen name="margin_8">-22.5dp</dimen>
+
+    <dimen name="margin9">25.5dp</dimen>
+    <dimen name="margin10">28.5dp</dimen>
+    <dimen name="margin11">31.5dp</dimen>
+    <dimen name="margin12">34.5dp</dimen>
+    <dimen name="margin13">37.5dp</dimen>
+    <dimen name="margin14">40.5dp</dimen>
+    <dimen name="margin15">43.5dp</dimen>
+    <dimen name="margin16">46.5dp</dimen>
+    <dimen name="margin17">49.5dp</dimen>
+    <dimen name="margin80">120dp</dimen>
+    <dimen name="header_height2">90dp</dimen>
+    <dimen name="margin252">278.3dp</dimen>
+    <dimen name="margin46">70dp</dimen>
+    <dimen name="side_menu_width">228.3dp</dimen>
+
+    <dimen name="image_width">156dp</dimen>
+    <dimen name="image_final_width">41.7dp</dimen>
+
+
+
+
+
+</resources>

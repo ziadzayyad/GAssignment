@@ -1,0 +1,24 @@
+<resources>
+    <!-- font sizes -->
+    <dimen name="font_tiny">16sp</dimen>
+    <dimen name="font_small">22sp</dimen>
+    <dimen name="font_small_plus">26sp</dimen>
+    <dimen name="font_medium">30sp</dimen>
+    <dimen name="font_medium_plus">34sp</dimen>
+    <dimen name="font_large">38sp</dimen>
+    <dimen name="font_large_plus">42sp</dimen>
+    <dimen name="font_title">46sp</dimen>
+    <dimen name="font_title_toolbar">50sp</dimen>
+    <!-- margins -->
+    <dimen name="margin1">2dp</dimen>
+    <dimen name="margin2">6dp</dimen>
+    <dimen name="margin3">10dp</dimen>
+    <dimen name="margin4">14dp</dimen>
+    <dimen name="margin5">18dp</dimen>
+    <dimen name="margin6">22dp</dimen>
+    <dimen name="margin7">26dp</dimen>
+    <dimen name="margin8">30dp</dimen>
+    <dimen name="margin9">34dp</dimen>
+    <dimen name="margin10">38dp</dimen>
+    <dimen name="margin11">42dp</dimen>
+</resources>

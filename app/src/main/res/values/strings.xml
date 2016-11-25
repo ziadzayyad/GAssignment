@@ -8,4 +8,12 @@
     <string name="action_show_hospitals_list">Show Hospitals List</string>
     <string name="search_hint">Search address or place</string>
     <string name="menu_search">Search</string>
+    <string name="TYPE_label">Type</string>
+    <string name="Ownership_label">Ownership</string>
+    <string name="Beneficiary_label">Beneficiary</string>
+    <string name="Area_label">Area</string>
+    <string name="FinanceNumber_label">Finance Number</string>
+    <string name="WorkingHoursAM_label">Working Hours AM</string>
+    <string name="WorkingHoursPM_label">Working Hours PM</string>
+    <string name="Header_label">Details</string>
 </resources>

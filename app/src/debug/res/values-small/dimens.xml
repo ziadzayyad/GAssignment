@@ -1,0 +1,22 @@
+<resources>
+    <!-- font sizes -->
+    <dimen name="font_tiny">8sp</dimen>
+    <dimen name="font_small">11sp</dimen>
+    <dimen name="font_small_plus">13sp</dimen>
+    <dimen name="font_medium">15sp</dimen>
+    <dimen name="font_medium_plus">17sp</dimen>
+    <dimen name="font_large">19sp</dimen>
+    <dimen name="font_large_plus">21sp</dimen>
+    <!-- margins -->
+    <dimen name="margin1">1dp</dimen>
+    <dimen name="margin2">3dp</dimen>
+    <dimen name="margin3">5dp</dimen>
+    <dimen name="margin4">7dp</dimen>
+    <dimen name="margin5">9dp</dimen>
+    <dimen name="margin6">11dp</dimen>
+    <dimen name="margin7">13dp</dimen>
+    <dimen name="margin8">15dp</dimen>
+    <dimen name="margin9">17dp</dimen>
+    <dimen name="margin10">19dp</dimen>
+    <dimen name="margin11">21dp</dimen>
+</resources>

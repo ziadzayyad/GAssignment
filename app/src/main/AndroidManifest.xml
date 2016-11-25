@@ -38,7 +38,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".AllHospitalsActivity" />
-        <activity android:name=".HospitalDetailsActivity"></activity>
+        <activity android:name=".HospitalDetailsActivity"></activity><!-- android:theme="@android:style/Theme.NoTitleBar"-->
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+  App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

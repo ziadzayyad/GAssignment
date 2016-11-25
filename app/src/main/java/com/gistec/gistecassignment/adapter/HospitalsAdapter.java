@@ -79,8 +79,6 @@ public class HospitalsAdapter extends BaseAdapter {
         TextView title = (TextView)vi.findViewById(R.id.txtTitle);
         TextView type = (TextView)vi.findViewById(R.id.txtType);
         NetworkImageView thumb_image=(NetworkImageView)vi.findViewById(R.id.list_image); // thumb image
-        
-        HashMap<String, String> song = new HashMap<String, String>();
         hospital  = hospitalsArrayList.get(position);
         title.setText(hospital.name);
         type.setText(hospital.type);

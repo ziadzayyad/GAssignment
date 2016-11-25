@@ -1,5 +1,59 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">50dp</dimen>
-    <dimen name="activity_vertical_margin">50dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    //////////////////////////////////
+
+
+    <dimen name="font_tiny">8sp</dimen>
+    <dimen name="font_small">11sp</dimen>
+    <dimen name="font_small_plus">13sp</dimen>
+    <dimen name="font_medium">15sp</dimen>
+    <dimen name="font_medium_plus">17sp</dimen>
+    <dimen name="font_large">19sp</dimen>
+    <dimen name="font_large_plus">21sp</dimen>
+    <dimen name="font_title">23sp</dimen>
+    <dimen name="font_super">40sp</dimen>
+
+    <!-- margins -->
+    <dimen name="margin1">1dp</dimen>
+    <dimen name="margin2">3dp</dimen>
+    <dimen name="margin3">5dp</dimen>
+    <dimen name="margin4">7dp</dimen>
+    <dimen name="margin5">9dp</dimen>
+    <dimen name="margin6">11dp</dimen>
+    <dimen name="margin7">13dp</dimen>
+    <dimen name="margin8">15dp</dimen>
+    <dimen name="margin_8">-15dp</dimen>
+    <dimen name="margin9">17dp</dimen>
+    <dimen name="margin10">19dp</dimen>
+    <dimen name="margin11">21dp</dimen>
+    <dimen name="margin12">23dp</dimen>
+    <dimen name="margin13">25dp</dimen>
+    <dimen name="margin14">27dp</dimen>
+    <dimen name="margin15">29dp</dimen>
+    <dimen name="margin16">31dp</dimen>
+    <dimen name="margin17">33dp</dimen>
+    <dimen name="margin80">80dp</dimen>
+
+
+    <dimen name="header_height2">60dp</dimen>
+    <dimen name="margin50">55dp</dimen>
+    <dimen name="margin252">252.2dp</dimen>
+    <dimen name="margin120">125dp</dimen>
+
+
+    <dimen name="margin46">46.67dp</dimen>
+    <dimen name="side_menu_width">152.2dp</dimen>
+
+    ////////////////////////////////////////////////////
+    <dimen name="image_width">104.3dp</dimen>
+    <dimen name="image_final_width">27.8dp</dimen>
+
+
 </resources>
