@@ -38,7 +38,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".AllHospitalsActivity" />
-        <activity android:name=".HospitalDetailsActivity"></activity><!-- android:theme="@android:style/Theme.NoTitleBar"-->
+        <activity android:name=".HospitalDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            /><!-- android:theme="@android:style/Theme.NoTitleBar"-->
 
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
   App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->

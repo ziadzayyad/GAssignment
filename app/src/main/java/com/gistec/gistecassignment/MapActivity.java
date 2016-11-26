@@ -1,5 +1,7 @@
 package com.gistec.gistecassignment;
 
+import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -57,11 +60,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private MarkerOptions markerOptions;
     private Marker marker;
     private String deviceLanguage;
+    private ProgressDialog progressDialog;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+    private ImageButton searchButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +75,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
+
         mapFragment.getMapAsync(this);
 
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
@@ -81,23 +87,14 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         View searchRef = menu.findItem(R.id.action_search).getActionView();
         mSearchEditText = (EditText) searchRef.findViewById(R.id.searchText);
 
+        searchButton = (ImageButton)findViewById(R.id.searchButton);
         mSearchEditText.setOnKeyListener(new View.OnKeyListener() {
 
             @Override
             public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
                 if (keyCode == KeyEvent.KEYCODE_ENTER) {
 
-                    Hospital hospital_= searchHospitalName(mSearchEditText.getText().toString());
-
-                    if(hospital_ !=null){
-
-
-                        Intent hospitalDetailsIntent = new Intent(MapActivity.this,HospitalDetailsActivity.class);
-                        hospitalDetailsIntent.putExtra("hospitalID",hospitaMarkerlHashMap.get(hospital_.marker));
-                        startActivity(hospitalDetailsIntent);
-
-
-                    }
+                    searchTrigger();
                     // onSearchButtonClicked(mSearchEditText);
                     return true;
                 }
@@ -107,19 +104,36 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         return true;
     }
 
+    private void searchTrigger()
+    {
+        Hospital hospital_= searchHospitalName(mSearchEditText.getText().toString());
+
+        if(hospital_ !=null){
+
+
+            Intent hospitalDetailsIntent = new Intent(MapActivity.this,HospitalDetailsActivity.class);
+            hospitalDetailsIntent.putExtra("hospitalID",hospitaMarkerlHashMap.get(hospital_.marker));
+            startActivity(hospitalDetailsIntent);
+
+        }
+        else
+        {
+            Toast.makeText(MapActivity.this, "no Hospital found with this name please try again", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
     private Hospital searchHospitalName(String searchName) {
+
+         searchName = searchName.toLowerCase();
 
         int searchListLength = hospitalsArrayList.size();
         for(int i=0; i<searchListLength;i++){
 
-            if(searchName!=null && hospitalsArrayList.get(i).name.contains(searchName)){
+            if(searchName!=null && hospitalsArrayList.get(i).name.toLowerCase().contains(searchName)){
                 return hospitalsArrayList.get(i);
             }
         }
-
-        Toast.makeText(MapActivity.this, "no Hospital found with this name please try again", Toast.LENGTH_SHORT).show();
-
-
 
         return null;
     }
@@ -174,8 +188,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
 
 
-
-
         return savedHospitalsArrayList;
     }
 
@@ -209,6 +221,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         deviceLanguage = Locale.getDefault().getDisplayLanguage();
 
+        progressDialog = ProgressDialog.show(MapActivity.this,"Loading","please wait...");
+
         putHospitalsMarkers();
     }
 
@@ -226,9 +240,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                         try {
                             JSONArray resultsJsonArray = response.getJSONArray("results");
                             hospitalsArrayList = new ArrayList<Hospital>();
-                            hospital = new Hospital();
+
                             for (int i = 0; i < resultsJsonArray.length(); i++) {
 
+                                hospital = new Hospital();
                                 hospital.name_English = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("English_Name");
                                 hospital.name_Arabic = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("Arabic_Name");
                                 hospital.type = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("Type");
@@ -267,11 +282,15 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                             e.printStackTrace();
                         }
 
+                        progressDialog.dismiss();
                     }
                 }, new Response.ErrorListener() {
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
+
+                        progressDialog.dismiss();
+
                         Toast.makeText(MapActivity.this, "Error in response", Toast.LENGTH_SHORT).show();
                     }
                 });

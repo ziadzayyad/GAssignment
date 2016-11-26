@@ -10,21 +10,28 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.gistec.gistecassignment.adapter.HospitalsAdapter;
+import com.gistec.gistecassignment.model.Hospital;
 import com.gistec.gistecassignment.utils.SessionManager;
+
+import java.util.ArrayList;
 
 public class AllHospitalsActivity extends AppCompatActivity {
 
     private ListView lvHospitals;
     private HospitalsAdapter hospitalsAdapter;
+    private ArrayList <Hospital> hospitalsArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_hospitals);
 
+        hospitalsArrayList = SessionManager.getHospitalsArrayList();
+
         lvHospitals = (ListView)findViewById(R.id.lvHospitals);
 
-        hospitalsAdapter = new HospitalsAdapter(AllHospitalsActivity.this, SessionManager.getHospitalsArrayList());
+        hospitalsAdapter = new HospitalsAdapter(AllHospitalsActivity.this, hospitalsArrayList);
+        Toast.makeText(AllHospitalsActivity.this, "hospitals length=" +hospitalsArrayList.size() , Toast.LENGTH_SHORT).show();
         lvHospitals.setAdapter(hospitalsAdapter);
 
         lvHospitals.setOnItemClickListener(new AdapterView.OnItemClickListener() {

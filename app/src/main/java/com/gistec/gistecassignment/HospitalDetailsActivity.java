@@ -28,7 +28,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
 
     private TextView tvType, tvOwnerShip,tvBeneficiary,tvFinancenumber,tvWorkingHoursAM,tvWorkingHoursPM,tvArea;
     private ImageView ivBackButton,ivbSaveHospital;
-    NetworkImageView niHospitalImage;
+    private NetworkImageView niHospitalImage;
     private ArrayList<Hospital> hospitalsArray;
     private Integer HospitalNum;
     private ImageLoader imageLoader;
@@ -38,6 +38,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_details);
+
 
         initiateVariables();
 

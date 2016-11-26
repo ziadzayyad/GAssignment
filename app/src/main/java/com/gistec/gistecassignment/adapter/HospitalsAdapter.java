@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
@@ -73,19 +74,19 @@ public class HospitalsAdapter extends BaseAdapter {
     
     public View getView(int position, View convertView, ViewGroup parent) {
         View vi=convertView;
-        if(convertView==null)
+    //    if(convertView==null) {
             vi = inflater.inflate(R.layout.list_row, null);
+            TextView title = (TextView) vi.findViewById(R.id.txtTitle);
+            TextView type = (TextView) vi.findViewById(R.id.txtType);
+            NetworkImageView thumb_image = (NetworkImageView) vi.findViewById(R.id.list_image); // thumb image
+            //hospital = new Hospital();
+            hospital = hospitalsArrayList.get(position);
+            title.setText(hospital.name);
+            type.setText(hospital.type);
 
-        TextView title = (TextView)vi.findViewById(R.id.txtTitle);
-        TextView type = (TextView)vi.findViewById(R.id.txtType);
-        NetworkImageView thumb_image=(NetworkImageView)vi.findViewById(R.id.list_image); // thumb image
-        hospital  = hospitalsArrayList.get(position);
-        title.setText(hospital.name);
-        type.setText(hospital.type);
+            thumb_image.setImageUrl(hospital.imageUrl, imageLoader);
 
-        thumb_image.setImageUrl(hospital.imageUrl, imageLoader);
-
-
+      //  }
         return vi;
     }
 

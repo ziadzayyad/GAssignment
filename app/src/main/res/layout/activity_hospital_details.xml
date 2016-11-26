@@ -66,7 +66,7 @@
     <com.android.volley.toolbox.NetworkImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin120"
-        app:srcCompat="@drawable/building"
+        android:src="@drawable/building"
         android:id="@+id/niHospitalImage"
         />
 
