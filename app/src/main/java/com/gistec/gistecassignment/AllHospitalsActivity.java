@@ -30,6 +30,8 @@ public class AllHospitalsActivity extends AppCompatActivity {
 
         lvHospitals = (ListView)findViewById(R.id.lvHospitals);
 
+        setTitle(R.string.title_activity_map);
+
         hospitalsAdapter = new HospitalsAdapter(AllHospitalsActivity.this, hospitalsArrayList);
         Toast.makeText(AllHospitalsActivity.this, "hospitals length=" +hospitalsArrayList.size() , Toast.LENGTH_SHORT).show();
         lvHospitals.setAdapter(hospitalsAdapter);
