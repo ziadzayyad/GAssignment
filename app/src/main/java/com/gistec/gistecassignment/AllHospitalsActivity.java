@@ -7,9 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.gistec.gistecassignment.adapter.HospitalsAdapter;
 import com.gistec.gistecassignment.model.Hospital;
@@ -24,20 +22,16 @@ public class AllHospitalsActivity extends AppCompatActivity {
     private ArrayList <Hospital> hospitalsArrayList;
     private int mode;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_hospitals);
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-
-
-        if (bundle != null){
-
+        if (bundle != null)
+        {
             mode = intent.getIntExtra(SessionManager.HOSPITALS_MODE, 0);
-         }
+        }
         if (mode == SessionManager.ALL_HOSPITALS_MODE)
         {
             hospitalsArrayList = SessionManager.getHospitalsArrayList();
@@ -50,45 +44,25 @@ public class AllHospitalsActivity extends AppCompatActivity {
         {
             hospitalsArrayList = SessionManager.getSearchHospitalsArrayList();
         }
-
-
-
-
-
         lvHospitals = (ListView)findViewById(R.id.lvHospitals);
-
         setTitle(R.string.title_activity_map);
-
         hospitalsAdapter = new HospitalsAdapter(AllHospitalsActivity.this, hospitalsArrayList);
-
-
-        //Toast.makeText(AllHospitalsActivity.this, "hospitals length=" +hospitalsArrayList.size() , Toast.LENGTH_SHORT).show();
         lvHospitals.setAdapter(hospitalsAdapter);
-
         lvHospitals.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
             {
-               // Toast.makeText(AllHospitalsActivity.this, "clicked on " + i , Toast.LENGTH_SHORT).show();
                 Intent hospitalDetailsIntent = new Intent(AllHospitalsActivity.this,HospitalDetailsActivity.class);
                 hospitalDetailsIntent.putExtra("hospitalID",i);
                 hospitalDetailsIntent.putExtra(SessionManager.HOSPITALS_MODE,mode);
                 startActivity(hospitalDetailsIntent);
             }
         });
-
-
-
-
-
     }
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);

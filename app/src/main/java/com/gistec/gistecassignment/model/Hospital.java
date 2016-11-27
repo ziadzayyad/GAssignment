@@ -2,12 +2,8 @@ package com.gistec.gistecassignment.model;
 
 import com.google.android.gms.maps.model.Marker;
 
-/**
- * Created by ZAD on 11/23/2016.
- */
-
-public class Hospital {
-
+public class Hospital
+{
     public String name;
     public String name_English;
     public String name_Arabic;
@@ -21,5 +17,4 @@ public class Hospital {
     public Marker marker;
     public String imageUrl;
     public Integer hospitalID;
-
 }

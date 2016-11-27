@@ -2,27 +2,15 @@ package com.gistec.gistecassignment.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
 import com.gistec.gistecassignment.model.Hospital;
-
 import java.util.ArrayList;
 import java.util.Map;
 
-/**
- * Created by ZAD on 11/24/2016.
- */
-
-public class SessionManager {
-
+public class SessionManager
+{
     private static ArrayList<Hospital> hospitalsArray,savedHospitalsArray,searchHospitalsResults;
     private static SharedPreferences info;
     private static Context context;
-
-
-    public SessionManager(Context context_){
-        context = context_;
-    }
-
     public static final int ALL_HOSPITALS_MODE = 0;
     public static final int SAVED_HOSPITALS_MODE = 1;
     public static final int SEARCH_HOSPITALS_MODE = 2;
@@ -31,7 +19,6 @@ public class SessionManager {
     public static void setHospitalsArrayList(ArrayList<Hospital> hospitalsArray_)
     {
         hospitalsArray = hospitalsArray_;
-
     }
 
     public static ArrayList<Hospital> getHospitalsArrayList()
@@ -44,18 +31,12 @@ public class SessionManager {
         savedHospitalsArray= new ArrayList<Hospital>();
          info = context.getSharedPreferences("SavedHospitalsList",
                 Context.MODE_PRIVATE);
-
         int counter = 0;
-        for (Map.Entry<String, ?> entry : info.getAll().entrySet()) {
-
-            counter++;
-            /* String a = entry.getValue().toString();
-            int b = Integer.parseInt(entry.getValue().toString());
-            Hospital hospital = hospitalsArray.get(Integer.parseInt(entry.getValue().toString()));
-            */
+        for (Map.Entry<String, ?> entry : info.getAll().entrySet())
+        {
+             counter++;
              savedHospitalsArray.add(hospitalsArray.get(Integer.parseInt(entry.getValue().toString())));
         }
-
         int a = counter;
         return savedHospitalsArray;
     }
@@ -63,7 +44,6 @@ public class SessionManager {
     public static void setSearchHospitalsArrayList(ArrayList<Hospital> searchHospitalsResults_)
     {
         searchHospitalsResults = searchHospitalsResults_;
-
     }
 
     public static ArrayList<Hospital> getSearchHospitalsArrayList()
@@ -71,17 +51,8 @@ public class SessionManager {
         return searchHospitalsResults;
     }
 
-
-    public static void addSavedHospitalToArrayList(Hospital savedHospital)
+    public static void setContext(Context context_)
     {
-       /* if(savedHospitalsArray.size()!=0)
-        savedHospitalsArray = getSavedHospitalsArrayList();*/
-
-
-
-    }
-    public static void loadHospitalsImages()
-    {
-
+        context = context_;
     }
 }

@@ -8,24 +8,19 @@ import android.support.v4.util.LruCache;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.Volley;
 import com.gistec.gistecassignment.model.Hospital;
 import com.gistec.gistecassignment.utils.SessionManager;
-import com.google.gson.Gson;
-
 import java.util.ArrayList;
 
-public class HospitalDetailsActivity extends AppCompatActivity {
-
-
+public class HospitalDetailsActivity extends AppCompatActivity
+{
     private TextView tvType, tvOwnerShip,tvBeneficiary,tvFinancenumber,tvWorkingHoursAM,tvWorkingHoursPM,tvArea;
     private ImageView ivBackButton,ivbSaveHospital;
     private NetworkImageView niHospitalImage;
@@ -40,15 +35,11 @@ public class HospitalDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_details);
-
-
         initiateVariables();
-
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-
-
-        if(bundle!=null) {
+        if(bundle!=null)
+        {
             HospitalNum = intent.getIntExtra("hospitalID", 0);
             mode = intent.getIntExtra(SessionManager.HOSPITALS_MODE, 0);
         }
@@ -57,33 +48,24 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         {
             hospitalsArray = SessionManager.getHospitalsArrayList();
         }
-        else if(mode == SessionManager.SAVED_HOSPITALS_MODE)// saved hospitals mode
+        else if(mode == SessionManager.SAVED_HOSPITALS_MODE)
         {
             hospitalsArray = SessionManager.getSavedHospitalsArrayList();
         }
-        else if(mode == SessionManager.SEARCH_HOSPITALS_MODE)// saved hospitals mode
+        else if(mode == SessionManager.SEARCH_HOSPITALS_MODE)
         {
             hospitalsArray = SessionManager.getSearchHospitalsArrayList();
         }
-
         setHospitalDetails(hospitalsArray.get(HospitalNum));
-
-
-
-
-
         ivBackButton .setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 finish();
             }
         });
-
-
         ivbSaveHospital .setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
-                if(!checkHospitalIfSaved()) {
-
+                if(!checkHospitalIfSaved())
+                {
                     saveHospitalDetails(hospitalsArray.get(HospitalNum));
                     Toast.makeText(HospitalDetailsActivity.this, "Hospital is saved", Toast.LENGTH_SHORT).show();
                 } else {
@@ -91,8 +73,6 @@ public class HospitalDetailsActivity extends AppCompatActivity {
                 }
             }
         });
-
-
     }
 
     private boolean checkHospitalIfSaved() {
@@ -104,15 +84,12 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         SharedPreferences info = this.getSharedPreferences("SavedHospitalsList",
                 Context.MODE_PRIVATE);
         SharedPreferences.Editor prefsEditor = info.edit();
-       /* Gson gson = new Gson();
-        String json = gson.toJson(hospital);
-        prefsEditor.putString("HospitalObject", json);*/
         prefsEditor.putInt(""+hospital.hospitalID,hospital.hospitalID);
         prefsEditor.apply();
     }
 
-    private void initiateVariables() {
-
+    private void initiateVariables()
+    {
         tvName = (TextView)findViewById(R.id.tvName);
         tvType = (TextView) findViewById(R.id.tvType);
         tvOwnerShip= (TextView) findViewById(R.id.tvOwnership);
@@ -124,16 +101,11 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         ivBackButton = (ImageView)findViewById(R.id.ivBackfDetails);
         ivbSaveHospital = (ImageView)findViewById(R.id.ivbSaveHospital);
         niHospitalImage= (NetworkImageView) findViewById(R.id.niHospitalImage);
-
-
-
         requestQueue = Volley.newRequestQueue(HospitalDetailsActivity.this);
-
         imageLoader = new ImageLoader(requestQueue,
                 new ImageLoader.ImageCache() {
                     private final LruCache<String, Bitmap>
                             cache = new LruCache<String, Bitmap>(20);
-
                     @Override
                     public Bitmap getBitmap(String url) {
                         return cache.get(url);
@@ -144,13 +116,9 @@ public class HospitalDetailsActivity extends AppCompatActivity {
                         cache.put(url, bitmap);
                     }
                 });
-
-
-
-}
-
-    private void setHospitalDetails(Hospital hospital){
-
+    }
+    private void setHospitalDetails(Hospital hospital)
+    {
         tvName.setText(hospital.name);
         tvType.setText(hospital.type);
         tvOwnerShip.setText(hospital.ownerShip);
@@ -159,14 +127,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         tvWorkingHoursAM.setText(hospital.workingHoursAM);
         tvWorkingHoursPM.setText(hospital.workingHoursPM);
         tvArea.setText(hospital.area);
-
-
         if(!hospital.imageUrl.equals("Null"))
         niHospitalImage.setImageUrl(hospital.imageUrl, imageLoader);
-
-
-
-
-
     }
 }
