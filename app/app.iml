@@ -244,6 +244,5 @@
     <orderEntry type="library" exported="" name="play-services-safetynet-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="firebase-analytics-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-tagmanager-9.0.0" level="project" />
-    <orderEntry type="library" exported="" name="android-android-25" level="project" />
   </component>
 </module>

@@ -61,14 +61,14 @@ public class AllHospitalsActivity extends AppCompatActivity {
         hospitalsAdapter = new HospitalsAdapter(AllHospitalsActivity.this, hospitalsArrayList);
 
 
-        Toast.makeText(AllHospitalsActivity.this, "hospitals length=" +hospitalsArrayList.size() , Toast.LENGTH_SHORT).show();
+        //Toast.makeText(AllHospitalsActivity.this, "hospitals length=" +hospitalsArrayList.size() , Toast.LENGTH_SHORT).show();
         lvHospitals.setAdapter(hospitalsAdapter);
 
         lvHospitals.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
             {
-                Toast.makeText(AllHospitalsActivity.this, "clicked on " + i , Toast.LENGTH_SHORT).show();
+               // Toast.makeText(AllHospitalsActivity.this, "clicked on " + i , Toast.LENGTH_SHORT).show();
                 Intent hospitalDetailsIntent = new Intent(AllHospitalsActivity.this,HospitalDetailsActivity.class);
                 hospitalDetailsIntent.putExtra("hospitalID",i);
                 hospitalDetailsIntent.putExtra(SessionManager.HOSPITALS_MODE,mode);
