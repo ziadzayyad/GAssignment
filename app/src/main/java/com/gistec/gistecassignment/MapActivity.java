@@ -144,9 +144,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         switch (item.getItemId()) {
 
             case R.id.action_ShowHospitalsList:
-                Intent hospitalsIntent = new Intent(MapActivity.this, AllHospitalsActivity.class);
-                SessionManager.setHospitalsArrayList(hospitalsArrayList);
-                startActivity(hospitalsIntent);
+                Intent allHospitalsIntent = new Intent(MapActivity.this, AllHospitalsActivity.class);
+                allHospitalsIntent.putExtra(SessionManager.HOSPITALS_MODE,SessionManager.ALL_HOSPITALS_MODE);
+                startActivity(allHospitalsIntent);
 
                 return true;
 
@@ -157,6 +157,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             case R.id.action_ShowSavedPlaces:
 
                 savedHospitalsArrayList = getSavedHospitalsArrayList();
+
+                Intent savedHospitalsIntent = new Intent(MapActivity.this, AllHospitalsActivity.class);
+                savedHospitalsIntent.putExtra(SessionManager.HOSPITALS_MODE,SessionManager.SAVED_HOSPITALS_MODE);
+                startActivity(savedHospitalsIntent);
+
                 //use AllHospitals Activity to display the Saved Hospitals Array List by parsing an intent with the Array list. Same for the Hospitals Array List
 
                /* Intent hospitalsIntent2 = new Intent(MapActivity.this, AllHospitalsActivity.class);
@@ -274,6 +279,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
                                 hospitalsArrayList.add(hospital);
                             }
+                            SessionManager.setHospitalsArrayList(hospitalsArrayList);
                             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(hospital.marker.getPosition(), 6f));
                             Toast.makeText(MapActivity.this, "arraylistLength = " + hospitalsArrayList.size(), Toast.LENGTH_LONG).show();
 

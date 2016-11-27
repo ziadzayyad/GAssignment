@@ -12,6 +12,10 @@ public class SessionManager {
 
     private static ArrayList<Hospital> hospitalsArray;
 
+    public static final int ALL_HOSPITALS_MODE = 0;
+    public static final int SAVED_HOSPITALS_MODE = 1;
+    public static final String HOSPITALS_MODE = "Mode";
+
     public static void setHospitalsArrayList(ArrayList<Hospital> hospitalsArray_)
     {
         hospitalsArray = hospitalsArray_;
