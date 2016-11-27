@@ -157,19 +157,15 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 return true;
 
             case R.id.action_ShowSavedPlaces:
+                //use AllHospitals Activity to display the Saved Hospitals Array List by parsing an intent with the Array list. Same for the Hospitals Array List
 
                 savedHospitalsArrayList = sessionManager.getSavedHospitalsArrayList();
-                savedHospitalsArrayList = getSavedHospitalsArrayList();
 
                 Intent savedHospitalsIntent = new Intent(MapActivity.this, AllHospitalsActivity.class);
                 savedHospitalsIntent.putExtra(SessionManager.HOSPITALS_MODE,SessionManager.SAVED_HOSPITALS_MODE);
                 startActivity(savedHospitalsIntent);
 
-                //use AllHospitals Activity to display the Saved Hospitals Array List by parsing an intent with the Array list. Same for the Hospitals Array List
 
-                Intent hospitalsSavedIntent = new Intent(MapActivity.this, AllHospitalsActivity.class);
-                hospitalsSavedIntent.putExtra("Mode",1);
-                startActivity(hospitalsSavedIntent);
 
                 return true;
 
