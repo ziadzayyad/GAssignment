@@ -23,6 +23,8 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -79,6 +81,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private ProgressDialog progressDialog;
     private SessionManager sessionManager;
     private boolean isPermissionsLoaded = false;
+    private  InputMethodManager imm;
 
 
     LatLng latLng;
@@ -203,6 +206,40 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 return true;
 
             case R.id.action_search:
+
+                mSearchEditText.setText("");
+
+              /*  final InputMethodManager inputMethodManager = (InputMethodManager) MapActivity.this
+                        .getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputMethodManager.showSoftInput(mSearchEditText, InputMethodManager.SHOW_IMPLICIT);
+
+                mSearchEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (hasFocus) {
+                            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+                        }
+                    }
+                });
+                mSearchEditText.setFocusableInTouchMode(true);
+                mSearchEditText.requestFocus();
+*/
+                mSearchEditText.requestFocus();
+                 imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+               // imm.showSoftInput(mSearchEditText, InputMethodManager.SHOW_IMPLICIT);
+                imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
+
+                mSearchEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View v, boolean hasFocus) {
+                        if (!hasFocus) {
+
+                            imm.hideSoftInputFromWindow(mSearchEditText.getWindowToken(), 0);
+                        }
+                    }
+                });
+
+
 
                 return true;
 
@@ -541,5 +578,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
+    }
+
+    public void onSearchButtonClicked(View view)
+    {
+
+        searchTrigger();
     }
 }

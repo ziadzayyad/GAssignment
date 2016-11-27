@@ -3,12 +3,24 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/menu_search"
+        android:onClick="onSearchButtonClicked"
+        android:background="@color/colorPrimary"
+        android:src="@android:drawable/ic_menu_search"/>
 
     <EditText
         android:id="@+id/searchText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:layout_toLeftOf="@id/searchButton"
+        android:layout_toStartOf="@id/searchButton"
         android:hint="@string/search_hint"
         android:inputType="text"
         android:minWidth="150dp" >
