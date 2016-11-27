@@ -20,5 +20,6 @@ public class Hospital {
     public String area;
     public Marker marker;
     public String imageUrl;
+    public Integer hospitalID;
 
 }

@@ -65,13 +65,21 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         ivbSaveHospital .setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
 
-                saveHospitalDetails(hospitalsArray.get(HospitalNum));
-                Toast.makeText(HospitalDetailsActivity.this,"Hospital is saved",Toast.LENGTH_SHORT).show();
+                if(!checkHospitalIfSaved()) {
 
+                    saveHospitalDetails(hospitalsArray.get(HospitalNum));
+                    Toast.makeText(HospitalDetailsActivity.this, "Hospital is saved", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(HospitalDetailsActivity.this, "Hospital is already saved", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
 
+    }
+
+    private boolean checkHospitalIfSaved() {
+        return false;
     }
 
     private void saveHospitalDetails(Hospital hospital) {
@@ -79,9 +87,10 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         SharedPreferences info = this.getSharedPreferences("SavedHospitalsList",
                 Context.MODE_PRIVATE);
         SharedPreferences.Editor prefsEditor = info.edit();
-        Gson gson = new Gson();
+       /* Gson gson = new Gson();
         String json = gson.toJson(hospital);
-        prefsEditor.putString("HospitalObject", json);
+        prefsEditor.putString("HospitalObject", json);*/
+        prefsEditor.putInt("HospitalID",hospital.hospitalID);
         prefsEditor.apply();
     }
 
@@ -134,7 +143,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         tvArea.setText(hospital.area);
 
 
-        if(hospital.imageUrl !="Null")
+        if(!hospital.imageUrl.equals("Null"))
         niHospitalImage.setImageUrl(hospital.imageUrl, imageLoader);
 
 

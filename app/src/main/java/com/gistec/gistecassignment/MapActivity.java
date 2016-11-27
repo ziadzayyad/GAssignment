@@ -61,6 +61,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private Marker marker;
     private String deviceLanguage;
     private ProgressDialog progressDialog;
+    private SessionManager sessionManager;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -73,6 +74,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
+        sessionManager = new SessionManager(this);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
 
@@ -145,7 +147,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
             case R.id.action_ShowHospitalsList:
                 Intent hospitalsIntent = new Intent(MapActivity.this, AllHospitalsActivity.class);
-                SessionManager.setHospitalsArrayList(hospitalsArrayList);
+                sessionManager.setHospitalsArrayList(hospitalsArrayList);
                 startActivity(hospitalsIntent);
 
                 return true;
@@ -156,12 +158,12 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
             case R.id.action_ShowSavedPlaces:
 
-                savedHospitalsArrayList = getSavedHospitalsArrayList();
+                savedHospitalsArrayList = sessionManager.getSavedHospitalsArrayList();
                 //use AllHospitals Activity to display the Saved Hospitals Array List by parsing an intent with the Array list. Same for the Hospitals Array List
 
-               /* Intent hospitalsIntent2 = new Intent(MapActivity.this, AllHospitalsActivity.class);
-                SessionManager.setSavedHospitalsArrayList(savedHospitalsArrayList);
-                startActivity(hospitalsIntent2);*/
+                Intent hospitalsSavedIntent = new Intent(MapActivity.this, AllHospitalsActivity.class);
+                hospitalsSavedIntent.putExtra("Mode",1);
+                startActivity(hospitalsSavedIntent);
 
                 return true;
 
@@ -169,27 +171,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         return super.onOptionsItemSelected(item);
     }
 
-    private ArrayList<Hospital> getSavedHospitalsArrayList() {
-
-        SharedPreferences info = this.getSharedPreferences("SavedHospitalsList",
-                Context.MODE_PRIVATE);
-        Gson gson = new Gson();
-        String json;
-        Hospital hospital;
-
-        for (Map.Entry<String, ?> entry : info.getAll().entrySet()) {
-
-          //  map.put(entry.getKey(), entry.getValue().toString());
-
-           // json = info.getString("HospitalObject", "");
-            json = entry.getValue().toString();
-            savedHospitalsArrayList.add(hospital = gson.fromJson(json, Hospital.class));
-        }
-
-
-
-        return savedHospitalsArrayList;
-    }
 
 
     @Override
@@ -255,6 +236,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                                 hospital.workingHoursPM = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("Working_Hours_PM");
                                 hospital.beneficiary = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("Beneficiary_party_EN");
                                 hospital.area = resultsJsonArray.getJSONObject(i).getJSONObject("attributes").getString("Area_EN");
+                                hospital.hospitalID=i; // Hospital unique identifier
 
                                 if (deviceLanguage.equals("العربية")) {
                                  //   hospital.marker.setTitle(hospital.name_Arabic);
