@@ -33,6 +33,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
     private Integer HospitalNum;
     private ImageLoader imageLoader;
     private RequestQueue requestQueue;
+    private TextView tvName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
+
 
         if(bundle!=null)
         HospitalNum = intent.getIntExtra("hospitalID",0);
@@ -89,6 +91,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
 
         hospitalsArray = SessionManager.getHospitalsArrayList();
 
+        tvName = (TextView)findViewById(R.id.tvName);
         tvType = (TextView) findViewById(R.id.tvType);
         tvOwnerShip= (TextView) findViewById(R.id.tvOwnership);
         tvBeneficiary= (TextView) findViewById(R.id.tvBeneficiary);
@@ -99,6 +102,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         ivBackButton = (ImageView)findViewById(R.id.ivBackfDetails);
         ivbSaveHospital = (ImageView)findViewById(R.id.ivbSaveHospital);
         niHospitalImage= (NetworkImageView) findViewById(R.id.niHospitalImage);
+
 
 
         requestQueue = Volley.newRequestQueue(HospitalDetailsActivity.this);
@@ -125,6 +129,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
 
     private void setHospitalDetails(Hospital hospital){
 
+        tvName.setText(hospital.name);
         tvType.setText(hospital.type);
         tvOwnerShip.setText(hospital.ownerShip);
         tvBeneficiary.setText(hospital.beneficiary);
@@ -132,7 +137,6 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         tvWorkingHoursAM.setText(hospital.workingHoursAM);
         tvWorkingHoursPM.setText(hospital.workingHoursPM);
         tvArea.setText(hospital.area);
-
 
         if(hospital.imageUrl !="Null")
         niHospitalImage.setImageUrl(hospital.imageUrl, imageLoader);
