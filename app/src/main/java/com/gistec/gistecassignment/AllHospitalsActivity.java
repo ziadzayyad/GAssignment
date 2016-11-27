@@ -47,7 +47,7 @@ public class AllHospitalsActivity extends AppCompatActivity {
         }
         else  // saved hospitals mode
         {
-
+            hospitalsArrayList = SessionManager.getSavedHospitalsArrayList();
         }
 
 
@@ -71,6 +71,7 @@ public class AllHospitalsActivity extends AppCompatActivity {
                 Toast.makeText(AllHospitalsActivity.this, "clicked on " + i , Toast.LENGTH_SHORT).show();
                 Intent hospitalDetailsIntent = new Intent(AllHospitalsActivity.this,HospitalDetailsActivity.class);
                 hospitalDetailsIntent.putExtra("hospitalID",i);
+                hospitalDetailsIntent.putExtra(SessionManager.HOSPITALS_MODE,mode);
                 startActivity(hospitalDetailsIntent);
             }
         });

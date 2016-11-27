@@ -30,6 +30,7 @@ public class SessionManager {
     public static void setHospitalsArrayList(ArrayList<Hospital> hospitalsArray_)
     {
         hospitalsArray = hospitalsArray_;
+
     }
 
     public static ArrayList<Hospital> getHospitalsArrayList()
@@ -39,13 +40,14 @@ public class SessionManager {
 
     public static ArrayList<Hospital> getSavedHospitalsArrayList()
     {
+        savedHospitalsArray= new ArrayList<Hospital>();
          info = context.getSharedPreferences("SavedHospitalsList",
                 Context.MODE_PRIVATE);
 
-
+        int counter = 0;
         for (Map.Entry<String, ?> entry : info.getAll().entrySet()) {
 
-
+            counter++;
             /* String a = entry.getValue().toString();
             int b = Integer.parseInt(entry.getValue().toString());
             Hospital hospital = hospitalsArray.get(Integer.parseInt(entry.getValue().toString()));
@@ -53,7 +55,7 @@ public class SessionManager {
              savedHospitalsArray.add(hospitalsArray.get(Integer.parseInt(entry.getValue().toString())));
         }
 
-
+        int a = counter;
         return savedHospitalsArray;
     }
 

@@ -16,4 +16,9 @@
     <string name="WorkingHoursAM_label">Working Hours AM</string>
     <string name="WorkingHoursPM_label">Working Hours PM</string>
     <string name="Header_label">Details</string>
+    <string name="action_show_saved_places">Show Saved Hospitals</string>
+
+    <string name="try_again">Try Again</string>
+    <string name="exit">Exit</string>
+
 </resources>

@@ -3,10 +3,12 @@ package com.gistec.gistecassignment;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -54,7 +56,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     private EditText mSearchEditText;
     private Hospital hospital;
-    private ArrayList<Hospital> hospitalsArrayList,savedHospitalsArrayList;
+    private ArrayList<Hospital> hospitalsArrayList;
     SharedPreferences mPrefs;
     HashMap<Marker, Integer> hospitaMarkerlHashMap= new HashMap<Marker, Integer>();
     private MarkerOptions markerOptions;
@@ -67,7 +69,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
-    private ImageButton searchButton;
+ //   private ImageButton searchButton;
+    private RequestQueue queue;
+    private JsonObjectRequest jsObjRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,12 +93,18 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         View searchRef = menu.findItem(R.id.action_search).getActionView();
         mSearchEditText = (EditText) searchRef.findViewById(R.id.searchText);
 
-        searchButton = (ImageButton)findViewById(R.id.searchButton);
+       // searchButton = (ImageButton)findViewById(R.id.searchButton);
         mSearchEditText.setOnKeyListener(new View.OnKeyListener() {
 
             @Override
             public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
+
+
+
                 if (keyCode == KeyEvent.KEYCODE_ENTER) {
+
+                    if (keyEvent.getAction()!=KeyEvent.ACTION_DOWN)
+                        return true;
 
                     searchTrigger();
                     // onSearchButtonClicked(mSearchEditText);
@@ -132,7 +142,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         int searchListLength = hospitalsArrayList.size();
         for(int i=0; i<searchListLength;i++){
 
-            if(searchName!=null && hospitalsArrayList.get(i).name.toLowerCase().contains(searchName)){
+            if(searchName!=null && !searchName.isEmpty() && !searchName.equals(" ") && hospitalsArrayList.get(i).name.toLowerCase().contains(searchName)){
                 return hospitalsArrayList.get(i);
             }
         }
@@ -159,14 +169,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             case R.id.action_ShowSavedPlaces:
                 //use AllHospitals Activity to display the Saved Hospitals Array List by parsing an intent with the Array list. Same for the Hospitals Array List
 
-                savedHospitalsArrayList = sessionManager.getSavedHospitalsArrayList();
-
                 Intent savedHospitalsIntent = new Intent(MapActivity.this, AllHospitalsActivity.class);
                 savedHospitalsIntent.putExtra(SessionManager.HOSPITALS_MODE,SessionManager.SAVED_HOSPITALS_MODE);
                 startActivity(savedHospitalsIntent);
-
-
-
                 return true;
 
         }
@@ -211,10 +216,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     private void putHospitalsMarkers() {
         // Instantiate the RequestQueue.
-        RequestQueue queue = Volley.newRequestQueue(this);
+        queue = Volley.newRequestQueue(this);
         String url = "http://devmaps.mopw.gov.ae/arcgis/rest/services/mopw/mopw_projects/MapServer/find?searchText=e&contains=true&layers=1&returnGeometry=true&returnZ=false&returnM=false&f=pjson";
 
-        JsonObjectRequest jsObjRequest = new JsonObjectRequest
+         jsObjRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
                     @Override
@@ -260,7 +265,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                             }
                             SessionManager.setHospitalsArrayList(hospitalsArrayList);
                             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(hospital.marker.getPosition(), 6f));
-                            Toast.makeText(MapActivity.this, "arraylistLength = " + hospitalsArrayList.size(), Toast.LENGTH_LONG).show();
+                           // Toast.makeText(MapActivity.this, "arraylistLength = " + hospitalsArrayList.size(), Toast.LENGTH_LONG).show();
 
 
                         } catch (JSONException e) {
@@ -274,9 +279,28 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     @Override
                     public void onErrorResponse(VolleyError error) {
 
+                        new AlertDialog.Builder(MapActivity.this)
+                                .setTitle("Network Error")
+                                .setMessage("Please check your internet connection and try again")
+                                .setPositiveButton(R.string.try_again, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        progressDialog.show();
+                                        queue.add(jsObjRequest);
+
+                                    }
+                                })
+                                .setNegativeButton(R.string.exit, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                       finish();
+                                    }
+                                })
+                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .setCancelable(false)
+                                .show();
+
                         progressDialog.dismiss();
 
-                        Toast.makeText(MapActivity.this, "Error in response", Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(MapActivity.this, "Error in response", Toast.LENGTH_SHORT).show();
                     }
                 });
 

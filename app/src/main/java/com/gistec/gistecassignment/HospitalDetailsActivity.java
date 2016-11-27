@@ -34,6 +34,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
     private ImageLoader imageLoader;
     private RequestQueue requestQueue;
     private TextView tvName;
+    private int mode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +48,16 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
 
 
-        if(bundle!=null)
-        HospitalNum = intent.getIntExtra("hospitalID",0);
+        if(bundle!=null) {
+            HospitalNum = intent.getIntExtra("hospitalID", 0);
+            mode = intent.getIntExtra(SessionManager.HOSPITALS_MODE, 0);
+        }
 
+        if(mode == SessionManager.SAVED_HOSPITALS_MODE){
+            hospitalsArray = SessionManager.getSavedHospitalsArrayList();
+        }else {
+            hospitalsArray = SessionManager.getHospitalsArrayList();
+        }
 
         setHospitalDetails(hospitalsArray.get(HospitalNum));
 
@@ -92,13 +100,11 @@ public class HospitalDetailsActivity extends AppCompatActivity {
        /* Gson gson = new Gson();
         String json = gson.toJson(hospital);
         prefsEditor.putString("HospitalObject", json);*/
-        prefsEditor.putInt("HospitalID",hospital.hospitalID);
+        prefsEditor.putInt(""+hospital.hospitalID,hospital.hospitalID);
         prefsEditor.apply();
     }
 
     private void initiateVariables() {
-
-        hospitalsArray = SessionManager.getHospitalsArrayList();
 
         tvName = (TextView)findViewById(R.id.tvName);
         tvType = (TextView) findViewById(R.id.tvType);
