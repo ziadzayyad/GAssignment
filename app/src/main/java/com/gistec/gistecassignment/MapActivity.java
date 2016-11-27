@@ -72,7 +72,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     private EditText mSearchEditText;
     private Hospital hospital;
-    private ArrayList<Hospital> hospitalsArrayList;
+    private ArrayList<Hospital> hospitalsArrayList,searchHospitalsArraylist;
     SharedPreferences mPrefs;
     HashMap<Marker, Integer> hospitaMarkerlHashMap = new HashMap<Marker, Integer>();
     private MarkerOptions markerOptions;
@@ -163,14 +163,16 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     }
 
     private void searchTrigger() {
-        Hospital hospital_ = searchHospitalName(mSearchEditText.getText().toString());
-
-        if (hospital_ != null) {
 
 
-            Intent hospitalDetailsIntent = new Intent(MapActivity.this, HospitalDetailsActivity.class);
-            hospitalDetailsIntent.putExtra("hospitalID", hospitaMarkerlHashMap.get(hospital_.marker));
-            startActivity(hospitalDetailsIntent);
+
+        SessionManager.setSearchHospitalsArrayList(searchHospitalName(mSearchEditText.getText().toString()));
+
+        if (searchHospitalsArraylist.size()!= 0 && !searchHospitalsArraylist.isEmpty()) {
+
+            Intent allHospitalsIntent = new Intent(MapActivity.this, AllHospitalsActivity.class);
+            allHospitalsIntent.putExtra(SessionManager.HOSPITALS_MODE, SessionManager.SEARCH_HOSPITALS_MODE);
+            startActivity(allHospitalsIntent);
 
         } else {
             Toast.makeText(MapActivity.this, "no Hospital found with this name please try again", Toast.LENGTH_SHORT).show();
@@ -178,7 +180,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     }
 
-    private Hospital searchHospitalName(String searchName) {
+    private ArrayList<Hospital> searchHospitalName(String searchName) {
+
+        searchHospitalsArraylist = new ArrayList<Hospital>();
 
         searchName = searchName.toLowerCase();
 
@@ -186,11 +190,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         for (int i = 0; i < searchListLength; i++) {
 
             if (searchName != null && !searchName.isEmpty() && !searchName.equals(" ") && hospitalsArrayList.get(i).name.toLowerCase().contains(searchName)) {
-                return hospitalsArrayList.get(i);
+                searchHospitalsArraylist.add(hospitalsArrayList.get(i));
             }
         }
 
-        return null;
+        return searchHospitalsArraylist;
     }
 
     @Override

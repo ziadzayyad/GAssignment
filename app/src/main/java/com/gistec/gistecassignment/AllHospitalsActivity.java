@@ -41,13 +41,14 @@ public class AllHospitalsActivity extends AppCompatActivity {
         if (mode == SessionManager.ALL_HOSPITALS_MODE)
         {
             hospitalsArrayList = SessionManager.getHospitalsArrayList();
-
-
-
         }
-        else  // saved hospitals mode
+        else if(mode == SessionManager.SAVED_HOSPITALS_MODE)// saved hospitals mode
         {
             hospitalsArrayList = SessionManager.getSavedHospitalsArrayList();
+        }
+        else if(mode == SessionManager.SEARCH_HOSPITALS_MODE)// saved hospitals mode
+        {
+            hospitalsArrayList = SessionManager.getSearchHospitalsArrayList();
         }
 
 

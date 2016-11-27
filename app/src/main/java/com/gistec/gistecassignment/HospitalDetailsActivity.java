@@ -53,10 +53,17 @@ public class HospitalDetailsActivity extends AppCompatActivity {
             mode = intent.getIntExtra(SessionManager.HOSPITALS_MODE, 0);
         }
 
-        if(mode == SessionManager.SAVED_HOSPITALS_MODE){
-            hospitalsArray = SessionManager.getSavedHospitalsArrayList();
-        }else {
+        if (mode == SessionManager.ALL_HOSPITALS_MODE)
+        {
             hospitalsArray = SessionManager.getHospitalsArrayList();
+        }
+        else if(mode == SessionManager.SAVED_HOSPITALS_MODE)// saved hospitals mode
+        {
+            hospitalsArray = SessionManager.getSavedHospitalsArrayList();
+        }
+        else if(mode == SessionManager.SEARCH_HOSPITALS_MODE)// saved hospitals mode
+        {
+            hospitalsArray = SessionManager.getSearchHospitalsArrayList();
         }
 
         setHospitalDetails(hospitalsArray.get(HospitalNum));
